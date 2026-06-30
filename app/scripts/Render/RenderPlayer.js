@@ -1,6 +1,6 @@
 export default async(Render, event) => {
-    let playerAnimationFrame = Render.gameState.animations['player'].frame
-    let playerImageData = Render.gameState.images['imgs/birds/default/bird.png']
+    let playerImageData = Render.gameState.images[`imgs/birds/${Render.gameState.gameStyle}/bird.png`]
+    let playerAnimationFrame = Render.gameState.animations[playerImageData.animationId].frame
 
     let playerSize = 50
     let playerX = Render.canvas.width*0.25

@@ -7,6 +7,8 @@ export class GameClass {
         this.sounds = require('./addSounds.js').default(this)
         this.images = require('./addImages.js').default(this)
 
+        this.gameStyle = 'default'
+
         this.playerData = {
             heightPercent: 75,
             velocityY: 0,

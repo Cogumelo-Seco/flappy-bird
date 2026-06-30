@@ -21,5 +21,9 @@ export default async(Listener, { event, on }) => {
     }
     let keyInfo = Listener.keys[keyPressed]
 
-    if (keyPressed == 'Space' && !hold && Listener.gameState.playerData.heightPercent < 100) Listener.gameState.playerData.velocityY = Listener.gameState.playerData.jumpForce;
+    if ((keyPressed == 'Space' || keyPressed == 'MouseClick') && !hold && Listener.gameState.playerData.heightPercent < 100) Listener.gameState.playerData.velocityY = Listener.gameState.playerData.jumpForce;
+
+    if (keyPressed == 'Digit1') Listener.gameState.gameStyle = 'dark'
+    if (keyPressed == 'Digit2') Listener.gameState.gameStyle = 'nyan'
+    if (keyPressed == 'Digit3') Listener.gameState.gameStyle = 'default'
 }

@@ -5,12 +5,29 @@ export default (Game) => {
             endFrame: 100,
             frame: 0,
             delay: 0,
-            totalDelay: 1000/20,
+            totalDelay: 1000/25,
+            loop: true
+        },
+        'background': {
+            startFrame: 0,
+            endFrame: window.innerWidth,
+            frame: 0,
+            delay: 0,
+            totalDelay: 1000/25,
             loop: true
         },
         'player': {
             startFrame: 0,
             endFrame: 2,
+            frame: 0,
+            delay: 0,
+            totalDelay: 1000/25,
+            //loop: true
+            boomerang: true
+        },
+        'nyan': {
+            startFrame: 0,
+            endFrame: 5,
             frame: 0,
             delay: 0,
             totalDelay: 1000/25,

@@ -12,7 +12,7 @@ export default async function Loading(Game) {
         else load(toLoad[Game.loading.loaded])
     }
 
-    const load = async({ dir, animationConfigDir, local }) => {
+    const load = async({ dir, animationConfigDir, local, animationId }) => {
         let loaded = false
 
         //setTimeout(() => {
@@ -45,6 +45,7 @@ export default async function Loading(Game) {
             img.id = dir
             Game.images[dir] = {
                 image: img,
+                animationId,
                 animationConfig
             }
         }

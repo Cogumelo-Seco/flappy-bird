@@ -30,7 +30,7 @@ export class RenderClass {
 
         this.scale = (window.innerWidth+window.innerHeight)/2
 
-        if (this.gameState && this.gameState.loading.loadComplete) {
+        if (this.gameState && this.gameState.loading.loadComplete) {            
             this.RenderScenery()
             this.RenderPlayer()
         }
