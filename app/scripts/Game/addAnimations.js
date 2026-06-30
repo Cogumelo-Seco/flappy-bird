@@ -31,8 +31,8 @@ export default (Game) => {
             frame: 0,
             delay: 0,
             totalDelay: 1000/25,
-            //loop: true
-            boomerang: true
+            loop: true
+            //boomerang: true
         }
     }
 }
